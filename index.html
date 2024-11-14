@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #007BFF;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #0056b3;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section.resume a {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        section.resume a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <h1>Welcome to My Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section>
+        <h2>About Me</h2>
+        <p>My name is Draeco Nicholai N. Rillera, I am 18 years old. In senior high, the course/strand I took was technical drafting, and I am currently studying at the University of the Cordilleras with my major in web-tech.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills and Expertise</h2>
+        <ul>
+            <li>Basic Coding</li>
+            <li>Basic Autocad</li>
+            <li>Problem Solving</li>
+            <li>Communication Skills</li>
+            <li>Team Collaboration</li>
+        </ul>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Pines City National Highschool Senior High</strong><br>
+                High School Diploma<br>
+                Graduation Year: 2022
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Achievements</h2>
+        <ul>
+            <li>NCII competent in technical drafting</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Blog</h2>
+        <p>Explore my thoughts and insights on various topics in my blog:</p>
+        <p>Blog: <a href="https://dnrillera.blogspot.com" target="_blank">https://dnrillera.blogspot.com</a></p>
+    </section>
+
+    <section class="resume">
+        <h2>Resume</h2>
+        <p>I am NCII competent in technical drafting. Here's my resume:</p>
+        <a href="Resume Draeco.pdf" download="Resume Draeco.pdf">Download Resume</a>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: draeconicholairillera@gmail.com</p>
+    </section>
+
+    <section>
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+    </section>
+
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = window.location.pathname;
+        };
+
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://yourdisqusshortname.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+</body>
+</html>
